@@ -1,6 +1,6 @@
 # Security Auditing Agent Skills
 
-![preview](imgs/agentskills.png)
+![preview](img/agentskills.png)
 
 A comprehensive guide and collection of AI agent skills focused on security auditing, vulnerability assessment, threat detection, and incident response. These skills enable agents to perform automated and semi-automated security tasks across codebases, networks, and sandboxed environments.
 
