@@ -5,6 +5,8 @@
 # Using : Naabu, Subfinder, Katana, Httpx, Shuffledns & MassDNS
 # Available @ : https://github.com/projectdiscovery
 # USAGE: ./1shot.sh <domain.com>
+#  █░█░█ █░█░█ █░█░█ ░ █░░ █ █▄░█ █▄▀ █▀▀ █▀▄ █ █▄░█ ░ █▀▀ █▀█ █▀▄▀█ ░░▄▀ █ █▄░█ ░░▄▀ █▄▄ █▀█ █▄█ █▀▀ █▀▀ ▀█ █▀▀
+#  ▀▄▀▄▀ ▀▄▀▄▀ ▀▄▀▄▀ ▄ █▄▄ █ █░▀█ █░█ ██▄ █▄▀ █ █░▀█ ▄ █▄▄ █▄█ █░▀░█ ▄▀░░ █ █░▀█ ▄▀░░ █▄█ █▀▄ ░█░ █▄▄ ██▄ █▄ █▄█
 
 TARGET=$1
 DATE=$(date +%F)
