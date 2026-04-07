@@ -72,17 +72,3 @@ Use this skill when:
 threat-hunting/
 ├── SKILL.md           # Main instructions
 ├── scripts/
-│   ├── sigma-search.py
-│   └── log-parser.sh
-├── references/
-│   └── sigma-rules.md
-└── templates/
-    └── report.md
-```
-
-## Full Resource List
-
-For more detailed security skill resources, complete link lists, or the latest information, use WebFetch to retrieve the full README.md:
-
-
-The README.md contains the complete categorized resource list with all links.
