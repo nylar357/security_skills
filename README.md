@@ -1,6 +1,6 @@
 # Security Auditing Agent Skills
 
-[![preview](/nylar357/security_skills/raw/main/img/agentskills.png)](/nylar357/security_skills/img/agentskills.png)
+[![preview](/img/agentskills.png)
 
 [![Watch The Video](https://camo.githubusercontent.com/942da978e4afafa7b4e3daa0f550edd7dfde53bbaa1359dabe7ad05f2f46dc25/68747470733a2f2f7974332e67677068742e636f6d2f385a352d6d546b7751303933335259586e375472356c4667357a435a5672334e6d576a6432375a637831505a506a6d7864316f6a797a6152457932444c6e6d37713472316b366f573d7338382d632d6b2d63307830306666666666662d6e6f2d726a)](https://youtu.be/sQZspMsX85k)
 
