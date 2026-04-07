@@ -1,61 +1,55 @@
 # Security Auditing Agent Skills
 
-![preview](img/agentskills.png)
+[![preview](/nylar357/security_skills/raw/main/img/agentskills.png)](/nylar357/security_skills/blob/main/img/agentskills.png)
 
-[![Watch The Video](https://yt3.ggpht.com/8Z5-mTkwQ0933RYXn7Tr5lFg5zCZVr3NmWjd27Zcx1PZPjmxd1ojyzaREy2DLnm7q4r1k6oW=s88-c-k-c0x00ffffff-no-rj)](https://youtu.be/sQZspMsX85k)
+[![Watch The Video](https://camo.githubusercontent.com/942da978e4afafa7b4e3daa0f550edd7dfde53bbaa1359dabe7ad05f2f46dc25/68747470733a2f2f7974332e67677068742e636f6d2f385a352d6d546b7751303933335259586e375472356c4667357a435a5672334e6d576a6432375a637831505a506a6d7864316f6a797a6152457932444c6e6d37713472316b366f573d7338382d632d6b2d63307830306666666666662d6e6f2d726a)](https://youtu.be/sQZspMsX85k)
 
 ( : oǝpᴉɅ ꓕ⅄
 
-A comprehensive guide and collection of AI agent skills focused on security auditing, vulnerability assessment, threat detection, and incident response. These skills enable agents to perform automated and semi-automated security tasks across codebases, networks, and sandboxed environments.
+A comprehensive collection of AI agent skills focused on security auditing, continuous attack surface mapping, digital forensics, and hardware-level threat detection. Built for execution within Linux CLI environments, these skills enable agents to orchestrate automated security tasks, analyze raw tool outputs, and compile actionable intelligence reports.
 
 ## 🎯 Scope
 
 This repository outlines agent skills designed specifically for:
-- Performing rigorous code auditing and static analysis
-- Executing controlled penetration tests and validating defensive telemetry
-- Conducting threat hunting, digital forensics, and deep malware analysis
-- Structuring security-focused AI agent workflows
+
+* Performing rigorous domain reconnaissance and host vulnerability discovery
+* Structuring automated pipeline workflows using industry-standard Golang tools
+* Executing localized Bluetooth Low Energy (BLE) surveillance and payload decoding
+* Identifying RF spoofing attacks and decoding cryptographic IoT handshakes
 
 ## 🛠️ Security Auditing Categories
 
-### 1. Code Auditing
-Agent skills equipped for deep codebase analysis and vulnerability discovery.
-* **Static Analysis:** Workflows utilizing `CodeQL`, `Semgrep`, and `Slither` for automated code scanning.
-* **Smart Contracts:** Specialized auditing for `Solidity` security and `Move` programming languages.
-* **Variant Analysis:** Automated skills for finding similar vulnerabilities across large codebases based on known patterns.
+### 1. Domain Reconnaissance & Attack Surface Mapping
+Agent skills equipped for deep infrastructure analysis and vulnerability discovery. 
 
-### 2. Penetration Testing
-Active assessment skills for identifying exploitable weaknesses and validating defensive controls.
-* **Metasploit Framework:** Bridges the gap between passive vulnerability scanning and active red teaming. This skill allows agents to autonomously execute modules for vulnerability exploitation, payload generation, and auxiliary scanning directly from a Linux CLI environment. Beyond offensive operations, it is highly valuable for generating realistic network traffic and system artifacts to train SOC workflows, test SIEM alerts, and verify defensive controls against post-exploitation activities.
-* **Web Application:** Automation using `Burp Suite`, `FFUF` for fuzzing, and targeted SQL injection / XSS testing.
-* **Network Infrastructure:** Workflows integrating `Nmap`, `Wireshark`, and SMTP/SSH vulnerability testing.
-* **Active Directory:** Advanced network auditing including Kerberoasting, DCSync, and pass-the-hash attack simulations.
+* **The 1Shot Pipeline:** An orchestrated workflow integrating the ProjectDiscovery suite (`Subfinder`, `ShuffleDNS`, `Naabu`, `HTTPX`, `Katana`, and `Nuclei`). 
+* **Threat Evaluation:** Advanced log-parsing capabilities where the agent ingests raw JSONL outputs to map vulnerabilities against the OWASP Top 10, cross-reference active CVEs, filter false positives, and output tactical remediation reports.
 
-### 3. Threat Hunting, Forensics & Malware Analysis
-Skills designed for identifying ongoing threats, analyzing post-incident data, and reverse-engineering malicious payloads.
-* **Malware Analyst:** An expert skill dedicated to defensive malware research, threat intelligence, and incident response. It equips agents to perform static analysis (using tools like IDA Pro or Ghidra to map execution flow) and dynamic behavioral analysis within monitored sandboxes. The workflow is optimized for extracting actionable Indicators of Compromise (IOCs)—such as C2 IP addresses, file hashes, and registry modifications—and compiling them into YARA rules and detection signatures. This skill operates strictly under ethical guidelines for authorized forensics and research.
-* **Detection Rules:** Generation and application of `Sigma` rules and `YARA` signatures.
-* **Forensics:** Capabilities for file metadata extraction and memory analysis.
-* **Incident Response:** Automated initial triage and investigation workflows.
+### 2. Tactical BLE Sniffing Operations
+Active and passive assessment skills for hardware, physical proximity tracking, and radio frequency analysis using an MDK Dongle (nRF52840) and `tshark`.
 
-## 📚 Key Skill Repositories
+* **Threat Detection:** Live identification of BLE proximity spam, popup flooding attacks (e.g., Apple/Samsung spoofers), and malformed packet injection.
+* **Protocol Decoding:** Capturing Security Manager Protocol (SMP) exchanges to track pairing events and the distribution of Identity Resolving Keys (IRK).
+* **Targeted Telemetry Vacuuming:** Extracting deep memory reads/writes (ATT/GATT) and custom manufacturer payloads from specific IoT devices to build detection signatures.
 
-If you are looking to expand your agent's capabilities, consider referencing these established collections:
-* **[Trail of Bits Security Team](https://github.com/trailofbits/skills):** Excellent for static analysis, code auditing, and smart contract evaluation.
-* **[Antigravity Collection](https://github.com/sickn33/antigravity-awesome-skills):** Contains over 50+ diverse cybersecurity skills.
-* **[Community Skills](https://github.com/mhattingpete/claude-skills-marketplace):** A strong resource specifically for computer forensics skills.
+## 🏗️ Repository Structure
 
-## 🏗️ Example Skill Structure
-
-When building out a new security auditing skill, maintain a clean and standardized directory structure. Here is an example for a threat hunting agent:
+When interacting with the agent, the skills are organized into dedicated subdirectories containing their specific prompts, scripts, and parsers. 
 
 ```text
-threat-hunting/
-├── SKILL.md           # Main instructions and system prompts
-├── scripts/
-│   ├── sigma-search.py
-│   └── log-parser.sh
-├── references/
-│   └── sigma-rules.md
-└── templates/
-    └── report.md
+security_skills/
+├── README.md                # You are here
+├── SKILL.md                 # Base template for generating new skills
+├── img/                     # Dashboards, previews, and diagrams
+└── skills/
+    ├── domain_recon/
+    │   ├── SKILL.md         # Assistant instructions for the recon pipeline
+    │   └── scripts/
+    │       └── 1shot.sh     # Bash wrapper for the ProjectDiscovery suite
+    └── ble_sniffing/
+        ├── SKILL.md         # Assistant instructions for BLE ops
+        └── scripts/
+            ├── mdk_stream.py
+            ├── ble_dashboard.py
+            ├── smp_decoder.py
+            └── ble_target_vacuum.py
