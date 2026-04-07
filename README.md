@@ -2,11 +2,11 @@
 
 ![preview](/img/agentskills.png)
 
-𝗰𝗹𝗶𝗰𝗸 𝘁𝗵𝗲 𝘃𝗶𝗱𝗲𝗼 👇
+⊂𝘭⫯⊂ⲕ 𝜏Ꮒ∈ ᨆ⫯ᖱ∈𝖮 👇
 
 [![Watch The Video](https://images.steamusercontent.com/ugc/854976916434675605/0A7FF9FDC45305AB9F1B4F51DCAC315274B28F96/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)](https://youtu.be/sQZspMsX85k)
 
-( : oǝpᴉɅ ꓕ⅄
+𝚢𝚘𝚞𝚝𝚞𝚋𝚎 𝚟𝚒𝚍𝚎𝚘 ( ͠ᵔ ᴗ͠ᵔ )
 
 A comprehensive collection of AI agent skills focused on security auditing, continuous attack surface mapping, digital forensics, and hardware-level threat detection. Built for execution within Linux CLI environments, these skills enable agents to orchestrate automated security tasks, analyze raw tool outputs, and compile actionable intelligence reports.
 
